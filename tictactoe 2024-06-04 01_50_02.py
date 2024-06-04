@@ -47,7 +47,7 @@ def player(board):
 
     # Check if the board is in a terminal state
     if terminal(board):
-    return "Game over"
+        return "Game over"
 
     if x_count == o_count:
         return 'X'
