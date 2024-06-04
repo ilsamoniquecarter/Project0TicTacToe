@@ -40,16 +40,15 @@ def player(board):
         # Check for a draw (no empty spaces)
         if all(cell != ' ' for row in board for cell in row):
             return True
-        return False
+            return False
 
     x_count = sum(row.count('X') for row in board)
     o_count = sum(row.count('O') for row in board)
 
-    # Check if the board is in a terminal state
-    if terminal(board):
+        # Check if the board is in a terminal state
+        if terminal(board):
         return "Game over"
-
-    if x_count == o_count:
+        if x_count == o_count:
         return 'X'
     elif x_count == o_count + 1:
         return 'O'
