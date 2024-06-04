@@ -45,11 +45,11 @@ def player(board):
     x_count = sum(row.count('X') for row in board)
     o_count = sum(row.count('O') for row in board)
 
-        # Check if the board is in a terminal state
-        if terminal(board):
-        return "Game over"
-        if x_count == o_count:
-        return 'X'
+     # Check if the board is in a terminal state
+     if terminal(board):
+     return "Game over"
+     if x_count == o_count:
+     return 'X'
     elif x_count == o_count + 1:
         return 'O'
     else:
