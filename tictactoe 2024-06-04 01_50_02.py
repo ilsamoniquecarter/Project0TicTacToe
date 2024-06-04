@@ -46,7 +46,7 @@ def player(board):
     o_count = sum(row.count('O') for row in board)
 
     # Check if the board is in a terminal state
-    if in a terminal state(board):
+    if a terminal state(board):
         return "Game over"
 
     if x_count == o_count:
