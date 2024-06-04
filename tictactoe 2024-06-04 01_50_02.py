@@ -51,9 +51,9 @@ def player(board):
      if x_count == o_count:
      return 'X'
     elif x_count == o_count + 1:
-        return 'O'
+    return 'O'
     else:
-        raise ValueError("Invalid board state")
+    raise ValueError("Invalid board state")
 
 # Example usage
 board = [
